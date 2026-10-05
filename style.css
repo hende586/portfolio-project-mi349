@@ -1,0 +1,23 @@
+:root{
+    --primary-bg: orange;
+    --primary-text: blue;
+    --standard-gap: 20px;
+}
+
+
+body {
+    font-family:cursive;
+    background: var(--primary-bg);
+    color: var(--primary-text)
+}
+
+#experience article{
+    background: gray;
+    margin: var(--standard-gap);
+}
+
+nav{
+    background: green;
+}
+
+

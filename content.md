@@ -24,3 +24,6 @@ Copy and pasted from previous code:
     <footer>
         
     </footer>
+10/8/2026
+Japanese Experience:
+I started Japanese in my sophomore year in high school and was able to pick up on it pretty quickly. My Japanese sensei in high school was amazing at her job and not only made learning the language fun, but also simple where if you caught on, it was easy to understand it. My final project in my senior year was to create a cooking video speaking only Japanese (link). I took a two year gap from my Japanese learning jounrey, but I declared the minor spring semseter sophomore year in College, and I am ready to derust and advance my skills further!

@@ -147,7 +147,7 @@ section {
 }
 
 #contact {
-    background: var(--accent-color);
+    background: #eeece5;
     padding: var(--standard-gap);
     border-radius: 10px;
 }
@@ -178,6 +178,13 @@ footer p {
     gap: var(--standard-gap);
 }
 
+
+#experience .articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--standard-gap);
+}
+
 #experience .articles > h2 {
     grid-column: 1 / -1;
 }
@@ -187,34 +194,33 @@ footer p {
     margin: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
     #experience .articles {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-/*end output*/
+/*End Output CSS*/
 
-#experience .articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: var(--standard-gap);
-}
-
-#experinces .articles > h2 {
-    flex-basis: 100%;
-}
-
-#experience .article > article {
-    flex: 1 1 250px;    
-    min-width: 0:
-    margin: 0;
-}
-
-@media (max-width: 700px) {
+@media (min-width: 800px) {
     #experience .articles {
-        flex-basis: 100;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1100px) {
+    main {
+        max-width: 1100px;
+    }
+
+    #experience .articles {
+        gap: 25px;
     }
 }

@@ -1,7 +1,8 @@
 
 :root {
     --primary-bg: #dad7cd;
-    --primary-text: #344e41;
+    --primary-border: #344e41;
+      --primary-text: #000000;
     --standard-gap: 20px;
     --accent-color: #a3b18a;
     --border-color: #588157;
@@ -16,7 +17,7 @@ body {
 }
 
 header {
-    background: var(--primary-text);
+    background: var(--primary-border);
     padding: var(--standard-gap);
     text-align: center;
 }

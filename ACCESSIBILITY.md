@@ -1,0 +1,1 @@
+Started with a 96 because some of text color was blending with the background. I then changed the text color to black but it was still a 96 because of the hyperlink color, so I made that black as well and finally got a 100. I'm gonna mess around to see which color works and pops out to the eye to be considered accessible for everyone. 

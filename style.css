@@ -34,10 +34,11 @@ body {
     line-height: 1.6;
   
 }
-
+/* AI HELP START 11/12: can you make it so that the button that triggers light and dark mode is on the header where about, experience, and contact is  */
 header {
+    position: relative;
     background: var(--header-bg);
-    padding: var(--standard-gap);
+    padding: 70px var(--standard-gap) var(--standard-gap);
     text-align: center;
     
 }
@@ -52,6 +53,11 @@ header img {
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
     list-style: none;
     padding: 0;
     margin: 10px 0 0;
@@ -59,9 +65,8 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 15px;
 }
-
+/* AI HELP END */
 nav a {
     color: var(--header-text);
     text-decoration: none;
@@ -209,12 +214,14 @@ footer p {
 }
 
 #theme-toggle {
+    position: absolute;
+    top: 15px;
+    right: var(--standard-gap);
     background: var(--button-bg);
     color: var(--body-text);
     border: 2px solid var(--border-color);
     border-radius: 8px;
     padding: 8px 15px;
-    margin-top: 15px;
     font-family: inherit;
     font-weight: bold;
     cursor: pointer;

@@ -2,24 +2,44 @@
 :root {
     --primary-bg: #dad7cd;
     --primary-border: #344e41;
-      --primary-text: #000000;
+    --primary-text: #000000;
     --standard-gap: 20px;
     --accent-color: #a3b18a;
     --border-color: #588157;
+    --header-bg: #344e41;
+    --header-text: #dad7cd;
+    --body-text: #344e41;
+    --card-bg: #eeece5;
+    --button-bg: #eeece5;
+}
+
+body.dark-mode {
+    --primary-bg: #202b24;
+    --primary-border: #a3b18a;
+    --primary-text: #e5e5d8;
+    --accent-color: #53654d;
+    --border-color: #82966d;
+    --header-bg: #17231c;
+    --header-text: #e5e5d8;
+    --body-text: #e5e5d8;
+    --card-bg: #344238;
+    --button-bg: #344238;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: var(--primary-bg);
-    color: var(--primary-border);
+    color: var(--body-text);
     margin: 0;
     line-height: 1.6;
+  
 }
 
 header {
-    background: var(--primary-border);
+    background: var(--header-bg);
     padding: var(--standard-gap);
     text-align: center;
+    
 }
 
 header img {
@@ -43,7 +63,7 @@ nav li {
 }
 
 nav a {
-    color: var(--primary-bg);
+    color: var(--header-text);
     text-decoration: none;
     font-weight: bold;
 }
@@ -86,11 +106,11 @@ section {
 }
 
 #about {
-    background: #eeece5;
+    background: var(--card-bg);
     padding: var(--standard-gap);
     border-radius: 10px;
+    
 }
-
 
 #about h2,
 #contact h2 {
@@ -112,15 +132,15 @@ section {
     margin: var(--standard-gap) 0;
     padding: var(--standard-gap);
     border-radius: 10px;
+
 }
 
 #experience article.JP {
-    background: #eeece5;
+    background: var(--card-bg);
     margin: var(--standard-gap) 0;
     padding: var(--standard-gap);
     border-radius: 10px;
 }
-
 
 #experience article h3 {
     border-bottom: 3px solid var(--border-color);
@@ -132,24 +152,23 @@ section {
 }
 
 #experience > h3 {
-    background: #eeece5;
+    background: var(--card-bg);
     padding: var(--standard-gap);
     border-radius: 10px 10px 0 0;
     margin-bottom: 0;
     border-bottom: 3px solid var(--border-color);
     padding-bottom: 8px;
-
 }
 
 #experience > h3 + p {
-    background: #eeece5;
+    background: var(--card-bg);
     padding: var(--standard-gap);
     border-radius: 0 0 10px 10px;
     margin-top: 0;
 }
 
 #contact {
-    background: #eeece5;
+    background: var(--card-bg);
     padding: var(--standard-gap);
     border-radius: 10px;
 }
@@ -163,23 +182,16 @@ address p {
 }
 
 footer {
-    background: var(--primary-border);
-    color: var(--primary-bg);
+    background: var(--header-bg);
+    color: var(--header-text);
     text-align: center;
     padding: var(--standard-gap);
+   
 }
 
 footer p {
     margin: 0;
 }
-
-/* can you make a grid style layout for the experience section, i have a 1x3 grid layout with some space between each header */
-#experience .articles {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: var(--standard-gap);
-}
-
 
 #experience .articles {
     display: grid;
@@ -196,6 +208,24 @@ footer p {
     margin: 0;
 }
 
+#theme-toggle {
+    background: var(--button-bg);
+    color: var(--body-text);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px 15px;
+    margin-top: 15px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+
+#theme-toggle:hover {
+    background: var(--accent-color);
+    color: var(--primary-text);
+}
+
 @media (min-width: 600px) {
     nav ul {
         flex-direction: row;
@@ -208,8 +238,6 @@ footer p {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-
-/*End Output CSS*/
 
 @media (min-width: 800px) {
     #experience .articles {
